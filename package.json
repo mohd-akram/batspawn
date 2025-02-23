@@ -1,0 +1,36 @@
+{
+  "name": "batspawn",
+  "version": "1.0.0",
+  "description": "Safe spawning of programs including Windows batch files",
+  "main": "index.js",
+  "files": [
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc -p jsconfig.json",
+    "test": "node --test",
+    "prepare": "npm run build",
+    "version": "npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohd-akram/batspawn.git"
+  },
+  "keywords": [
+    "spawn",
+    "windows",
+    "cmd",
+    "batch"
+  ],
+  "author": "Mohamed Akram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohd-akram/batspawn/issues"
+  },
+  "homepage": "https://github.com/mohd-akram/batspawn#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
