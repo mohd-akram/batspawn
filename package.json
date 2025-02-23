@@ -1,6 +1,6 @@
 {
   "name": "batspawn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Safe spawning of programs including Windows batch files",
   "main": "index.js",
   "files": [
