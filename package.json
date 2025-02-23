@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "tsc -p jsconfig.json",
+    "pretest": "cd test && node-gyp --silent build || node-gyp rebuild",
     "test": "node --test",
     "prepare": "npm run build",
     "version": "npm test",
@@ -32,5 +33,6 @@
   "devDependencies": {
     "@types/node": "^22.13.5",
     "typescript": "^5.7.3"
-  }
+  },
+  "gypfile": false
 }
